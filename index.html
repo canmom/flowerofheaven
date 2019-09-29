@@ -130,12 +130,12 @@ class Passage {
       columns.forEach((col) => {
         const el = htmlToElement(`<li class="mostrecent">${this.text}</li>`);
         document.getElementById(col).appendChild(el);
-      }) else {
-        ["pilot", "mech"].forEach((col) => {
-          document.getElementById(col).innerHTML='';
-        })
-        game.showNextPassage();
-      }
+      })
+    } else {
+      ["pilot", "mech"].forEach((col) => {
+        document.getElementById(col).innerHTML='';
+      })
+      game.showNextPassage();
     }
   }
 }
