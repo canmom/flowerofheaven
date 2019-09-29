@@ -14,10 +14,11 @@ P: I step out of the prayer niche.
 P: The attendants take the robe from my shoulders.
 P: The pilot's vestments are folded neatly beside an incense burner.
 P: I hold out my arms and whisper words of devotion as they fit them to me.
+M: I rest on my supports in the temple-hangar.
 M: A woman stands in front of me. She wears the robes of a priest.
 M: The technicians bow to her.
 M: She sings a song of prayer.
-M: Her voice resonates throughout the temple-hangar.
+M: Her voice resonates throughout the room.
 P: An attendant pins a flower to my hair.
 P: "Come back to us." she says, quietly.
 P: I do not know her name.
@@ -144,3 +145,93 @@ M: I receive a signal. The enemy has been detected.
 P: No more time to think about theology.
 P: It's time to fight.
 CUT
+P: I have seen the godless soldiers.
+M: I have lain waste to the godless soldiers.
+P: Their giants were strong, but they were not FLOWER OF HEAVEN.
+M: I floated above the battlefield and cast fire on the scurrying soldiers in thirteen directions.
+M: I ran along the battlefield and cut their armoured beetles in two with my spear.
+M: I stood on a hilltop and blasted holes in their giants with my bow.
+M: The bride of the goddess guided me, so it was right and it was pure.
+P: Through FLOWER OF HEAVEN's eyes, I saw the shattered soldiers crawl on the ground.
+P: They are invaders. They are here to make beasts of us. It is not right to feel pity.
+P: It is impure.
+M: I am sweating. Exhaustion floods my limbs.
+M: I rest my spear on the ground.
+M: This sweat is a brutish animal feeling, not fit for a Goddess.
+M: But of course, I am not the Goddess. Merely an imitation.
+P: I see the strange woman before FLOWER OF HEAVEN notices her.
+P: I ask her to look closer.
+M: The bride sees a soldier who is different from the others.
+M: I have not seen this type of soldier. I am nervous.
+P: She is very tall. Her uniform jacket is very sharp.
+P: She is much too clean for a battlefield.
+P: She smiles very slightly, eyeing me. No. Eyeing FLOWER OF HEAVEN.
+P: I have not seen anyone look at me this way.
+P: Not fear, not deference, not boredom.
+P: Desire?
+M: When she moves, she is a blur.
+M: None of the other soldiers could move this fast. She is more like a missile than a human.
+P: I do not want this woman to reach me.
+M: I launch my missiles. They converge, and explode around her.
+P: She emerges from the smoke at speed.
+P: She is injured. Her elegant uniform is splattered with blood.
+P: She should not be moving. The shrapnel should have killed her.
+M: I raise my lance. The beam cuts a line along the landscape, and a moment later, it erupts with colourful fire.
+M: The beam cuts through her, cutting her in two.
+M: But a moment later, she's standing again. She is laughing, now. She points her sword at me.
+P: This woman cannot be killed.
+P: I plead with FLOWER OF HEAVEN to run.
+M: I am the image of the Goddess. I will not run from one lone soldier.
+M: I raise my bow. The javelins turn the ground into a forest of needles.
+M: They pass through her, but the holes close almost as soon as they open.
+P: Her uniform is all but gone.
+P: Her body is uninjured. She has taken attacks that would kill battalions.
+P: She leaps towards me. Deep inside FLOWER OF HEAVEN, I raise my arms to protect my face.
+M: I raise my arms to swat the troublesome soldier out of the air.
+M: Even if she won't die, I can hold her still.
+P: "You must not!"
+P: My words mean nothing.
+M: She cuts my hand open. The pain is overwhelming.
+M: She cuts the web between my finger and thumb. My spear falls to the ground. I cannot hold it.
+M: She runs up my arm. She cuts and cuts.
+M: My blood is not like the humans' blood. It is white, and it forms into strands of new flesh.
+M: I swat at her. She dances aside. My hand sticks to my arm.
+P: FLOWER OF HEAVEN will be killed.
+P: I feel certain of this. I have been with her less than a day.
+P: This beast-woman will burrow into her head and destroy her brain.
+P: She is no longer listening to me.
+M: She reaches my neck. She cuts my windpipe.
+M: My airway collapses. I have fallen to my knees.
+P: I beg for an escape.
+P: If I can just face her...
+P: I can plead for mercy.
+M: The bride of heaven wishes to leave me.
+M: I cannot refuse this order.
+M: Nor should I consider it. I have failed her.
+M: My defeat is an insult to the Goddess.
+P: I emerge from FLOWER OF HEAVEN's back. Warm flesh peels back, releasing me into the air.
+P: I am cold.
+P: I am vulnerable.
+P: She is slumped in a wooded valley. All around are trees with pink flowers.
+P: Heavens' flowers. Her namesake.
+M: I have one arm that still works. I am sure to die, but I can deal with the strange soldier.
+M: She is agile. She cannot die. But if I can catch her...
+P: I can see the strange soldier, perched on FLOWER OF HEAVEN's shoulders.
+P: The soldier is surprised to see me.
+P: She says something in a strange, foreign language.
+P: I hold out my hands, to show that I am unarmed.
+P: "Please." I say. "We are defeated. Let this one live."
+M: I can hear her, in the distance.
+M: She is begging for my life. Why?
+M: I am a failure. An insulting imitation that should not have been made.
+M: She should surrender. My instructions are clear.
+M: Better that she surrender, that the priests pay dearly, than the Goddess lose her sacred bride.
+M: I don't want her to die, either.
+P: The strange soldier is watching me. She says something else in her language.
+P: Who is she talking to? A superior?
+P: Abruptly, she is beside me.
+P: She punches me, hard, in the centre of my chest.
+P: I have never been hit. The priests did not need to.
+P: I can barely move for the pain.
+P: Then, she is gone.
+M: The strange soldier departs. Was I wrong?

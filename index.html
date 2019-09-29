@@ -125,11 +125,18 @@ class Passage {
   }
 
   render () {
-    const columns = passage_types[this.type];
-    columns.forEach((col) => {
-      const el = htmlToElement(`<li class="mostrecent">${this.text}</li>`);
-      document.getElementById(col).appendChild(el);
-    })
+    if (this.type !== "CUT") {
+      const columns = passage_types[this.type];
+      columns.forEach((col) => {
+        const el = htmlToElement(`<li class="mostrecent">${this.text}</li>`);
+        document.getElementById(col).appendChild(el);
+      }) else {
+        ["pilot", "mech"].forEach((col) => {
+          document.getElementById(col).innerHTML='';
+        })
+        game.showNextPassage();
+      }
+    }
   }
 }
 
