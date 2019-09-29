@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FLOWER OF HEAVEN</title>
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Molengo" rel="stylesheet">
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+    body {
+      font-family: "Molengo", "Linux Biolinum", sans-serif;
+      background-color: #b50039;
+      color: #DDD;
+      font-size: 2.5vh;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow:hidden;
+    }
+    article {
+      width: calc((16/9) *(100vh - 3em));
+      height: calc(100vh - 6em);
+      background-color: #111;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1em;
+      padding-top: 2em;
+      padding-bottom: 9em;
+      margin: 1em;
+      border-radius: 2em;
+      overflow: hidden;
+    }
+    article ul {
+      width: 45%;
+      height: calc(100vh - 15em);
+      border: 2px solid white;
+      border-radius: 1em;
+      margin: 0 1em;
+      padding: 0.8em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+    article ul li {
+      list-style: none;
+      color: #aaa;
+      animation: fadein 0.5s;
+    }
+    article ul li.mostrecent {
+      color: white;
+    }
+    article button#advance {
+      position: absolute;
+      bottom: 0.75em;
+      height: 1.25em;
+      border-radius: 0.25em;
+      background-color: #D14A6E;
+      border: none;
+      width: 8em;
+      font-family: "Hammersmith One", sans-serif;
+      font-size: 400%;
+      color: black;
+    }
+    article button#advance:hover {
+      background-color: #f76565;
+    }
+    article button#advance:active {
+      background-color: #50edb3;
+    }
+    hr {
+      width: 50%;
+      border-color: #F0BA59;
+    }
+    @keyframes fadein {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <ul id="pilot">
+      
+    </ul>
+    <ul id="mech">
+      
+    </ul>
+    <button id="advance">advance</button>
+  </article>
+  <script>
+const story = {
+  currentPassage: 0,
+  showNextPassage: function() {
+    document.querySelectorAll(".mostrecent").forEach((el) => el.classList.remove("mostrecent"));
+    story.currentPassage++;
+    story.passages[story.currentPassage].render();
+  }
+};
+
+function htmlToElement(html) {
+  const template = document.createElement('template');
+  html = html.trim(); // Never return a text node of whitespace as the result
+  template.innerHTML = html;
+  return template.content.firstChild;
+}
+
+const passage_types = {
+  "P: " : ["pilot"],
+  "M: " : ["mech"],
+  "PM:" : ["pilot", "mech"],
+  "CUT" : []
+}
+
+class Passage {
+  constructor (passage_type, text) {
+    this.type = passage_type;
+    this.text = text;
+  }
+
+  render () {
+    const columns = passage_types[this.type];
+    columns.forEach((col) => {
+      const el = htmlToElement(`<li class="mostrecent">${this.text}</li>`);
+      document.getElementById(col).appendChild(el);
+    })
+  }
+}
+
+function loadScript() {
+  return new Promise(function(resolve, reject) {
+    fetch('./script.txt')
+      .then(function (response) {
+        response.text().then(function(text) {
+          story.passages = text.split(/\r?\n/).map((s) => {
+            const passage_type = s.slice(0,3);
+            const text = s.slice(3);
+            return new Passage(passage_type, text)
+          });
+          console.log(`Successfully loaded script containing ${story.passages.length} lines!`)
+          resolve();
+      }, reject);
+    });
+  });
+}
+
+loadScript().then(() => {
+  story.passages[0].render();
+  document.getElementById('advance').addEventListener('click',story.showNextPassage);
+});
+  </script>
+</body>
+</html>
